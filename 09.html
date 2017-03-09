@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/swiper.css">
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.swiper-container{
+			width: 500px;
+			height: 300px;
+			margin:20px auto;
+		}
+		.swiper-slide{
+			background-size: cover;
+			background-position: center;
+		}
+
+		
+		
+	</style>
+</head>
+
+<body>
+	<div class="swiper-container  gallery-top">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" style="background-color: blue;">第1页</div>
+			<div class="swiper-slide" style="background-color: red;">第2页</div>
+			<div class="swiper-slide" style="background-color: yellow;">第3页</div>
+			<div class="swiper-slide" style="background-color: green;">第4页</div>
+		</div>
+		<div class="swiper-pagination"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+	</div>
+
+	<div class="swiper-container gallery-thumbs">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" style="background-color: blue;">第1页</div>
+			<div class="swiper-slide" style="background-color: red;">第2页</div>
+			<div class="swiper-slide" style="background-color: yellow;">第3页</div>
+			<div class="swiper-slide" style="background-color: green;">第4页</div>
+		</div>
+	</div>
+
+	<script src="js/swiper.min.js"></script>
+	
+	<script>
+		var  swiper=  new  Swiper(".swiper-container",{
+			pagination:".swiper-pagination",
+			paginationClickable:true,
+			spaceBetween:20,
+			prevButton:".swiper-button-prev",
+			nextButton:".swiper-button-next",
+
+			loop:true,
+			effect:"flip",
+			keyboardControl:true,
+
+			mousewheelControl:true,
+
+			autoplay:2000, 
+			autoplayDisableOnInteraction:false,
+
+
+
+		});
+
+	</script>
+</body>
+</html>

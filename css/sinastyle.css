@@ -1,0 +1,116 @@
+@charset  "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+/* 头部 */
+#header{
+	width: 100%;
+	height: 36px;
+	border-bottom: 1px  solid  #ccc;
+	font: 1em/36px/Arial;
+	/* 加载父级元素 */
+	overflow: hidden;
+}
+/* 头部线条 */
+#header  #top-link{
+	width: 100%;
+	height: 3px;
+	/* background: linear-gradient(toright,red 0,green 50%,blue 100%); */
+	background: linear-gradient(to right,red 0,green 50%,blue 100%);
+	
+}
+/* 头部文字 */
+#header .swiper-slide{
+	/* width: 100%; */
+	width: auto;
+	height: 33px;
+	/* overflow: hidden;  加错了*/
+	padding: 0 15px;
+	/* box-sizing: boder-box; */
+	box-sizing: border-box;
+
+}
+
+/* 头部文字下方的活动的小条 */
+ .header-active{
+	/* background-color: skyblue;
+	width: 100%;
+	height: 3px; */
+	color:#0af;
+	border-bottom:2px solid #0af; 
+}
+/* 设置完样式后，页面会有几个文字，但是不能滑动 */
+
+
+
+
+
+
+/* banner图片 */
+
+#banner{
+	width: 100%;
+	/* height: 20%;太小了*/
+	height: 200px;
+	position: relative;
+	margin-top: 45px;
+	overflow: hidden;
+}
+
+#banner .swiper-slide{
+	/* 加在img的框框上面 */
+	text-align: center;
+}
+
+/* 图片 */
+/* #banner  img{  错了
+	position: absolute;
+	display: inline-block;
+	width: auto;
+	height: 200px;
+	z-index: 500;
+	margin: 0  auto;
+	border: 1px solid  red;
+} */
+
+
+#banner img{
+	max-width: 100%;
+
+	/* text-align: center; 没用*/
+}
+
+
+/* 文字 */
+/* #banner  title{ */
+#banner  .title{
+	position: absolute;
+	z-index: 999;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+	/* 没有想到 */
+	font-size: 1em;
+	font-weight: normal;
+	color: #fff;
+	/* height: 40px; */
+	/* line-height: 40px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
